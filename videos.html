@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preload" href="./css/styles.css" as="styles">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="icon" href="./img/Computer_icon.ico">
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>A Programar</title>
+    </head>
+    <body>
+        <header class="header">
+            <a class="logo" href="./index.html">
+                <img loading="lazy" class="logo-img" src="./img/logo-negro.png" alt="Logotipo">
+            </a>
+    
+            <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+            
+            <nav class="navegacion" id="nav">
+                <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+                <ul class="ul_links">
+                    <li class="li_links"><a class="links" href="./index.html">Inicio</a></li>
+                    <li class="li_links"><a class="links links--activo" href="./videos.html">Videos</a></li>
+                    <li class="li_links"><a class="links" href="./recursos.html">Recursos</a></li>
+                    <li class="li_links"><a class="links" href="./preguntas.html">Preguntas</a></li>
+                </ul>
+            </nav>
+            
+        </header> <!-- Fin Header-->
+
+        <section class="hero-pag-video">
+            <h1 class="titulo">Para Aprender</h1>    
+        </section>
+
+        <main class="contenedor-acordeon">
+            <h2>Presentación Freelancer</h2>
+
+            <!-- Acordeón 1 -->
+            <div class="acordeon">
+                <input type="checkbox" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+                <label for="btn-acordeon1">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14 btn-acordeon1-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
+                    <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                    <h3>Editores de Texto, IDE's y mucho más</h3>
+                </label>
+
+                <!-- Contenido Acordeon 1-->
+                    <div class="contenido-acordeon">
+                        <p class="parrafo-videos">Para los que no saben nadade nada de programación, en este video te muestra como instalar la extención <b>Live-server</b> que sirve para previsualizar la página a medida que la construimos.</p>
+                    
+                        <div class="flex-content">
+
+                            <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1i-wpVjgdgKBGw9n1uDEEdXWt_n-5DvAG/preview">
+         
+                                <i class="bi bi-play-circle"></i>
+                                Visual Studio Code - Extenciones y demas...
+                            </a>
+                            
+                            <input type="checkbox" name="check1" id="check1" data-video-id="video1">
+                        </div>
+
+                        
+                    </div>
+            </div><!-- Fin acordeon 1 -->
+
+            <!-- Acordeón 2 -->
+            <div class="acordeon">
+                <input type="checkbox" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+                <label for="btn-acordeon2">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14 btn-acordeon1-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
+                    <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                    <h3>SITIO FREELANCER Creando un Proyecto paso a paso HTML</h3>
+                </label>
+
+                <!-- Contenido Acordeon 2-->
+                 <!-- Enlace video 1 -->
+                <div class="contenido-acordeon">
+                    <p class="parrafo-videos">
+                    En esta lista de videos se empieza a realizar un proyecto explicando las bases de HTML<br><br>
+                    <i>(Los videos que contienen un * tienen sus descargas o enlaces en la página <a href="./recursos.html">recursos</a>)</i><br><br></p>
+                    <div class="flex-content">
+
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1hxqmMRWEQ_wuhwxuLB6LJU6X7x4LZKzc/preview">                           
+                            <i class="bi bi-play-circle"></i>
+                            1. Introducción a HTML - El Rol de HTML *
+                        </a>          
+                        <input type="checkbox" name="check2" id="check2" data-video-id="video2">
+                    </div>   
+
+                    <!-- Enlace video 2 -->
+                    <div class="flex-content">
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/19dryW3T6-gLUoDafT4Y_Iez73K3BNCgT/preview">
+                            <i class="bi bi-play-circle"></i>
+                            2. Creando los textos con HTML
+                        </a>          
+                        <input type="checkbox" name="check3" id="check3" data-video-id="video3">
+                    </div>   
+
+                    <!-- Enlace video 3 -->
+                    <div class="flex-content">
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1TLWfb6OAG7hvvJf3oX7vhKemrefbOFp4/preview">
+                            <i class="bi bi-play-circle"></i>
+                            3. Estructurar Contenido en HTML
+                        </a>          
+                        <input type="checkbox" name="check4" id="check4" data-video-id="video4">
+                    </div>   
+
+                    <!-- Enlace video 4 -->
+                    <div class="flex-content">
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1LCfbo3bsCNAKRfMzddUHH5EzJBKR98dM/preview">
+                            <i class="bi bi-play-circle"></i>
+                            4. Creando Enlaces y Navegación
+                        </a>          
+                        <input type="checkbox" name="check5" id="check5" data-video-id="video5">
+                    </div>   
+
+                    <!-- Enlace video 5 -->
+                    <div class="flex-content">
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1p1N44dPxSCnkqby558v7I87IOTeAml36/preview">
+                            <i class="bi bi-play-circle"></i>
+                            5. Añadir imágenes con HTML *
+                        </a>          
+                        <input type="checkbox" name="check6" id="check6" data-video-id="video6">
+                    </div>   
+
+                    <!-- Enlace video 6 -->
+                    <div class="flex-content">
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1ItXdd5oYrVd9a1XA1fUNtD6JtkV_Slrg/preview">
+                            <i class="bi bi-play-circle"></i>
+                            6. Formularios en HTML
+                        </a>          
+                        <input type="checkbox" name="check7" id="check7" data-video-id="video7">
+                    </div>   
+                </div>
+            </div><!-- Fin acordeon 2 -->
+
+            <!-- Acordeón 3 -->
+            <div class="acordeon">
+                <input type="checkbox" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+                <label for="btn-acordeon3">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14 btn-acordeon1-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
+                    <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                    <h3>SITIO FREELANCER Creando un Proyecto paso a paso CSS</h3>
+                </label>
+
+                <!-- Contenido Acordeon 3-->
+                    <div class="contenido-acordeon">
+                        <p class="parrafo-videos">En esta lista de videos continua con el proyecto pero viendo las bases de CSS
+
+                        <!-- Enlace Video 1 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1P_86t_xiGmj8VvQH-x8ZazX0dO-n9TZh/preview">  
+                                <i class="bi bi-play-circle"></i>
+                                1. Introducción a CSS - El rol de CSS
+                            </a> 
+                            <input type="checkbox" name="check8" id="check8" data-video-id="video8">
+                        </div>
+
+                        <!-- Enlace Video 2 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                            <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/110EOF0vAVegL3p4SJDR8v4BULSo6KVVD/preview">                          
+                                <i class="bi bi-play-circle"></i>
+                                2. Primeros pasos con CSS
+                            </a>                            
+                            <input type="checkbox" name="check9" id="check9" data-video-id="video9">
+                        </div>
+
+                        <!-- Enlace Video 3 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                            <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1wivcL1PLjffPNIFQMx7ZT2KJw2rA72cN/preview">             
+                                <i class="bi bi-play-circle"></i>
+                                3. Crear un archivo externo para el CSS
+                            </a>                           
+                            <input type="checkbox" name="check10" id="check10" data-video-id="video10">
+                        </div>
+
+                        <!-- Enlace Video 4 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                            <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1oXUAXaBIFYm6qce1Ek5wpy3PX3mr0GRZ/preview">                 
+                                <i class="bi bi-play-circle"></i>
+                                4. Estilos a nuestro proyecto
+                            </a>
+                            <input type="checkbox" name="check11" id="check11" data-video-id="video11">
+                        </div>
+                        <!-- Enlace Video 5 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                            <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1ZnqBwO-sl-Mb9UGqU0NgS_EW0QNCT41f/preview">            
+                                <i class="bi bi-play-circle"></i>
+                                5. Introducción a Selectores CSS
+                            </a>
+                            <input type="checkbox" name="check12" id="check12" data-video-id="video12">
+                        </div>
+                        <!-- Enlace Video 6 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                            <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1Fjy7lGeixUN8dZzmrtzTTmnITQwvShgv/preview">                 
+                                <i class="bi bi-play-circle"></i>
+                                6. Especificidad en CSS
+                            </a>
+                            <input type="checkbox" name="check13" id="check13" data-video-id="video13">
+                        </div>
+                        <!-- Enlace Video 7 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                            <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1SwGdEDJdw5JmEv6wf5AKz0C52dUgAo4w/preview">              
+                                <i class="bi bi-play-circle"></i>
+                                7. Colores en CSS
+                            </a>
+                            <input type="checkbox" name="check14" id="check14" data-video-id="video14">
+                        </div>
+                        <!-- Enlace Video 8 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                            <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1wKYXEw7Ag5bY408lAn-1ieGn1X_m5qmS/preview"> 
+                                <i class="bi bi-play-circle"></i>
+                                8. Añadir Fuentes externas *
+                            </a>
+                            <input type="checkbox" name="check15" id="check15" data-video-id="video15">
+                        </div>
+                        <!-- Enlace Video 9 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                            <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1KEn7fV3sbNLpAJAVFCU6Yb_FCyt9f2EG/preview">                  
+                                <i class="bi bi-play-circle"></i>
+                                9. Añadiendo Normalize CSS *
+                            </a>
+                            <input type="checkbox" name="check16" id="check16" data-video-id="video16">
+                        </div>
+                        <!-- Enlace Video 10 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/15SlAPmpgga8vIory0NgpeLU9cs2L41z5/preview">
+                                <i class="bi bi-play-circle"></i>
+                                10. Estilos CSS a  la navegación - Primeros Pasos
+                            </a>
+                            <input type="checkbox" name="check17" id="check17" data-video-id="video17">
+                        </div>
+                        <!-- Enlace Video 11 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1WY1s11s7WKMD8W67f4gmmcIHA5zDCk2H/preview">
+                                <i class="bi bi-play-circle"></i>
+                                11. Estilos CSS a la navegación y Displays en CSS
+                            </a>
+                            <input type="checkbox" name="check18" id="check18" data-video-id="video18">
+                        </div>
+                        <!-- Enlace Video 12 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1OkedO37WHslc8AXiibMmiEaq8bPFijdv/preview">
+                                <i class="bi bi-play-circle"></i>
+                                12. Estilos a la navegación y Tipos de Efectos a textos
+                            </a>
+                            <input type="checkbox" name="check19" id="check19" data-video-id="video19">
+                        </div>
+                        <!-- Enlace Video 13 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1PRs-nh9zdm-eCZuKDEmWumCRvuW8Uss_/preview">
+                                <i class="bi bi-play-circle"></i>
+                                13. Estilo s la navegación y posicionando los enlaces con Flexbox
+                            </a>
+                            <input type="checkbox" name="check20" id="check20" data-video-id="video20">
+                        </div>
+                        <!-- Enlace Video 14 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1NzcQKeap5WcTbW6msXy668Enx5xCTvr_/preview">
+                                <i class="bi bi-play-circle"></i>
+                                14. Estilos para escribir código CSS - BEM, Módulos y Utilidades
+                            </a>
+                            <input type="checkbox" name="check21" id="check21" data-video-id="video21">
+                        </div>
+                        <!-- Enlace Video 15 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1-gg6EX85IDhzm-91k5P8pjm1gCxq-C6r/preview">            
+                                <i class="bi bi-play-circle"></i>
+                                15. Finalizando la navegación
+                            </a>
+                            <input type="checkbox" name="check22" id="check22" data-video-id="video22">
+                        </div>
+                        <!-- Enlace Video 16 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1cWDVRWlGCkgPWPiXauczsC01XtjovXy5/preview">
+                                <i class="bi bi-play-circle"></i>
+                                16. Introducción a Responsive Web Design y Media Queries
+                            </a>
+                            <input type="checkbox" name="check23" id="check23" data-video-id="video23">
+                        </div>
+                        <!-- Enlace Video 17 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1pt4LuX9NIGOfF3Ed0XlE0usYZdt9vgZs/preview">      
+                                <i class="bi bi-play-circle"></i>
+                                17. Añadiendo Media Queries *
+                            </a>
+                            <input type="checkbox" name="check24" id="check24" data-video-id="video24">
+                        </div>
+                        <!-- Enlace Video 18 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1u1pToa8z9MzrrLQV4Dgjj7rdlZkeB-w4/preview">
+                                <i class="bi bi-play-circle"></i>
+                                18. Imagenes con CSS
+                            </a>
+                            <input type="checkbox" name="check25" id="check25" data-video-id="video25">
+                        </div>
+                        <!-- Enlace Video 19 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/13Aj7qaZmjCzSajv23a0-7z8AuZ4UEz19/preview">
+                                <i class="bi bi-play-circle"></i>
+                                19. CSS Box Model *
+                            </a>
+                            <input type="checkbox" name="check26" id="check26" data-video-id="video26">
+                        </div>
+                        <!-- Enlace Video 20 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1dUbIYMiInR-ZRGlUyb3W5_oL7nXvl-pa/preview">
+                                <i class="bi bi-play-circle"></i>
+                                20. Posicionando elementos con position absolute
+                            </a>
+                            <input type="checkbox" name="check27" id="check27" data-video-id="video27">
+                        </div>
+                        <!-- Enlace Video 21 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1AG_nGUWVa9tGJw5kaPnwzYJNMZwWMSfG/preview">
+                                <i class="bi bi-play-circle"></i>
+                                21. CSS a los Headings
+                            </a>
+                            <input type="checkbox" name="check28" id="check28" data-video-id="video28">
+                        </div>
+                        <!-- Enlace Video 22 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/14ugR50qppj0evkSKwq0rdJ_vUv6sdosO/preview">   
+                                <i class="bi bi-play-circle"></i>
+                                22. CSS para crear botones
+                            </a>
+                            <input type="checkbox" name="check29" id="check29" data-video-id="video29">
+                        </div>
+                        <!-- Enlace Video 23 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1YFrg7-4xuHIDOUxhyZAfpk-7HVdLfDtf/preview">      
+                                <i class="bi bi-play-circle"></i>
+                                23. Comentar el código CSS
+                            </a>
+                            <input type="checkbox" name="check30" id="check30" data-video-id="video30">
+                        </div>
+                        <!-- Enlace Video 24 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1kIHMXoB5RS8LFIkILu_9PyWqKslveA1m/preview"> 
+                                <i class="bi bi-play-circle"></i>
+                                24. Degradados con CSS
+                            </a>
+                            <input type="checkbox" name="check31" id="check31" data-video-id="video31">
+                        </div>
+                        <!-- Enlace Video 25 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1dFct-h4HlrnHTXp13kMXGl_UC3i0aBC8/preview">
+                                <i class="bi bi-play-circle"></i>
+                                25. Sombras con CSS *
+                            </a>
+                            <input type="checkbox" name="check32" id="check32" data-video-id="video32">
+                        </div>
+                        <!-- Enlace Video 26 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1-_m1xLWgxgYbGQekYHVfXHGeG7yb-eOg/preview">     
+                                <i class="bi bi-play-circle"></i>
+                                26. Introducción a CSS Grid
+                            </a>
+                            <input type="checkbox" name="check33" id="check33" data-video-id="video33">
+                        </div>
+                        <!-- Enlace Video 27 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1PIqujsU7wy23JTSXfe4DM82IJrjFEkyE/preview">
+                                <i class="bi bi-play-circle"></i>
+                                27. Cuando usar CSS Grid, Flexbox y Floats
+                            </a>
+                            <input type="checkbox" name="check34" id="check34" data-video-id="video34">
+                        </div>
+                        <!-- Enlace Video 28 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1s6K8gT7i7k3zsG8eDSzjSgfPtP2wsByO/preview">
+                                <i class="bi bi-play-circle"></i>
+                                28. Finalizando la sección de Servicios
+                            </a>
+                            <input type="checkbox" name="check35" id="check35" data-video-id="video35">
+                        </div>
+                        <!-- Enlace Video 29 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1K_y-8iVctpwdPNyhrSQ65rSN-k2Rg3iQ/preview">
+                                <i class="bi bi-play-circle"></i>
+                                29. Primeros pasos con el formulario
+                            </a>
+                            <input type="checkbox" name="check36" id="check36" data-video-id="video36">
+                        </div>
+                        <!-- Enlace Video 30 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1Irf8HNEHy6vOvS4WApDqlh5N_pY_O82p/preview">
+                                <i class="bi bi-play-circle"></i>
+                                30. CSS  a los inputs
+                            </a>
+                            <input type="checkbox" name="check37" id="check37" data-video-id="video37">
+                        </div>
+                        <!-- Enlace Video 31 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1gXDpZte_VK_Eoa6GoIY9o3w7MW5UDPJp/preview">
+                                <i class="bi bi-play-circle"></i>
+                                31. Posicionando los Inputs
+                            </a>
+                            <input type="checkbox" name="check38" id="check38" data-video-id="video38">
+                        </div>
+                        <!-- Enlace Video 32 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/10gCqUQt3Xm5tm26ndrGFtYqy3mDZ3yjq/preview">
+                                <i class="bi bi-play-circle"></i>
+                                32. Añadiendo un Efecto de Scroll
+                            </a>
+                            <input type="checkbox" name="check39" id="check39" data-video-id="video39">
+                        </div>
+                        <!-- Enlace Video 33 -->
+                        <div class="flex-content">
+                            <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1hP6xEwyQhEJGt6H_Lf5WrkZAQlwxPhCj/preview">
+                                <i class="bi bi-play-circle"></i>
+                                33. Publicar un Proyecto en Netlify *
+                            </a>
+                            <input type="checkbox" name="check40" id="check40" data-video-id="video40">
+                        </div>
+
+                        
+                    </div>
+            </div><!-- Fin acordeon 3 -->
+
+
+            <!-- Aca  -->
+            <h2 class="titu-2">FRONTEND STORE</h2>
+
+            <!-- Acordeón 4 -->
+            <div class="acordeon">
+                <input type="checkbox" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+                <label for="btn-acordeon4">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14 btn-acordeon1-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
+                    <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
+                    <h3>FRONTEND STORE - Segundo Proyecto con HTML y CSS</h3>
+                </label>
+
+                <!-- Contenido Acordeon 4-->
+                <div class="contenido-acordeon">
+                    <p class="parrafo-videos">En esta lista se enseña a hacer una maqueta de tienda solo usando HTML y CSS.<br>
+                    Esta es la maqueta que hice cambiando los estilos: <a href="https://practica1-pagina-boca-ventas.netlify.app" target="_blank" rel="noopener noreferrer">Mi Store</a> (Tiene errores Nunca la termine 🤦‍♂️). Hace la tuya dandole los estilos que desees!</p><br>
+                        
+                    <!-- Enlace video 1 -->
+                    <div class="flex-content">
+
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/12IrE-5lhBPQ-BdeAldIK_SbQ2EaUA2zL/preview">                           
+                            <i class="bi bi-play-circle"></i>
+                            1. Viendo el Proyecto Finalizado *
+                        </a>          
+                        <input type="checkbox" name="check41" id="check41" data-video-id="video41">
+                    </div> 
+                
+                    <!-- Enlace video 2 -->
+                    <div class="flex-content">
+
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1I5X4-JALRvIM4TFiKjX8ryh_ollnuPVx/preview">                           
+                            <i class="bi bi-play-circle"></i>
+                            2. Primeros pasos
+                        </a>          
+                        <input type="checkbox" name="check42" id="check42" data-video-id="video42">
+                    </div> 
+                
+                    <!-- Enlace video 3 -->
+                    <div class="flex-content">
+
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1QwRAtCSSY0gDAUoGFgOYmVps8qT6s8vg/preview">                           
+                            <i class="bi bi-play-circle"></i>
+                            3. Añadiendo los Globales al CSS
+                        </a>          
+                        <input type="checkbox" name="check43" id="check43" data-video-id="video43">
+                    </div> 
+                
+                    <!-- Enlace video 4 -->
+                    <div class="flex-content">
+
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1tJuEse9DLV7wuswTF9yxGr3WSvHIQkYr/preview">                           
+                            <i class="bi bi-play-circle"></i>
+                            4. Añadiendo el Logotipo y la navegación
+                        </a>          
+                        <input type="checkbox" name="check44" id="check44" data-video-id="video44">
+                    </div> 
+                
+                    <!-- Enlace video 5 -->
+                    <div class="flex-content">
+
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/17ay4Bwgyk0vxjoxwV-UuwqhTAbEdYYIr/preview">                           
+                            <i class="bi bi-play-circle"></i>
+                            5. Introducción a BEM
+                        </a>          
+                        <input type="checkbox" name="check45" id="check45" data-video-id="video45">
+                    </div> 
+                
+                    <!-- Enlace video 6 -->
+                    <div class="flex-content">
+
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/159sCyAFhqxNVRqAEO6XXHFrG4daynd_n/preview">                           
+                            <i class="bi bi-play-circle"></i>
+                            6. Creando los enlaces
+                        </a>          
+                        <input type="checkbox" name="check46" id="check46" data-video-id="video46">
+                    </div> 
+                
+                    <!-- Enlace video 7 -->
+                    <div class="flex-content">
+
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1l3JYrS5TYxgdWGqKfN4dkY37DQ_d7FEK/preview">                           
+                            <i class="bi bi-play-circle"></i>
+                            7. Añadiendo los Productos
+                        </a>          
+                        <input type="checkbox" name="check47" id="check47" data-video-id="video47">
+                    </div> 
+                
+                    <!-- Enlace video 8 -->
+                    <div class="flex-content">
+
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1sfvV_9KjQhyWqkjiPn1yo80uYOTVp6B4/preview">                           
+                            <i class="bi bi-play-circle"></i>
+                            8. CSS a los Productos
+                        </a>          
+                        <input type="checkbox" name="check48" id="check48" data-video-id="video48">
+                    </div> 
+                
+                    <!-- Enlace video 9 -->
+                    <div class="flex-content">
+
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1kutvOHEIwXKiD1cZrGmyr5eYq6IS6jpY/preview">                           
+                            <i class="bi bi-play-circle"></i>
+                            9. Posicionar elementos con CSS Grid
+                        </a>          
+                        <input type="checkbox" name="check49" id="check49" data-video-id="video49">
+                    </div> 
+                
+                    <!-- Enlace video 10 -->
+                    <div class="flex-content">
+
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1IZ5xkX24SrcQqrLV6IyNgP67tMZ1Gjy2/preview">                           
+                            <i class="bi bi-play-circle"></i>
+                            10. Creando la página de Nosotros
+                        </a>          
+                        <input type="checkbox" name="check50" id="check50" data-video-id="video50">
+                    </div> 
+                
+                    <!-- Enlace video 11 -->
+                    <div class="flex-content">
+
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1m5wM2HIokL2X1nAW9WjG7jVUXMVGM5oy/preview">                           
+                            <i class="bi bi-play-circle"></i>
+                            11. Creando la sección con iconos
+                        </a>          
+                        <input type="checkbox" name="check51" id="check51" data-video-id="video51">
+                    </div> 
+                
+                    <!-- Enlace video 12 -->
+                    <div class="flex-content">
+
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/19GkzzpkHmnBkwBKa3sS-Dot_uflne_Fy/preview">                           
+                            <i class="bi bi-play-circle"></i>
+                            12. HTML para la sección de Producto
+                        </a>          
+                        <input type="checkbox" name="check52" id="check52" data-video-id="video52">
+                    </div> 
+                
+                    <!-- Enlace video 13 -->
+                    <div class="flex-content">
+
+                        <!-- Enlace gdrive -->
+                        <a href="#" class="enla-vid" data-video-url="https://drive.google.com/file/d/1aLOJ1cNL6RH3BuxEzZFhUJqGgczV5v00/preview">                           
+                            <i class="bi bi-play-circle"></i>
+                            13. CSS a la sección de Producto
+                        </a>          
+                        <input type="checkbox" name="check53" id="check53" data-video-id="video53">
+                    </div> 
+                </div>
+
+            </div><!-- Fin acordeon 4 -->
+
+        </main>
+
+        <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-cont">
+            <section class="section-1">
+                <h3>Página útiles</h3>
+                <div class="footer-cont__a">
+                    <a href="https://tablericons.com/" target="_blank" rel="noopener noreferrer">Tabler Icons</a><br>
+                    <a href="https://heroicons.com/" target="_blank" rel="noopener noreferrer">Hero Icons</a><br>
+                    <a href="https://www.freepik.es" target="_blank" rel="noopener noreferrer">Freepik</a><br>
+                    <a href="https://pixabay.com/es/" target="_blank" rel="noopener noreferrer">Pixabay</a><br>
+                    <a href="https://www.pexels.com/es-es/" target="_blank" rel="noopener noreferrer">Pexels</a><br>
+                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener noreferrer">Guia Flexbox</a><br>
+                    <a href="https://www.freecodecamp.org/learn/
+                    " target="_blank" rel="noopener noreferrer">Freecodecamp</a><br>
+                    <a href="https://www.w3schools.com/html/html_headings.asp
+                    " target="_blank" rel="noopener noreferrer">W3Schools</a>
+                    <a href="https://www.tutorialesprogramacionya.com/htmlya/html5/" target="_blank" rel="noopener noreferrer">Programacion Ya</a>
+                </div>
+            </section>
+
+            <section class="section-2">
+                <h3>Curso Talento Tech</h3>
+                <div class="footer-cont__a">
+                    <a href="mati.campos@bue.edu.ar
+                    " target="_blank" rel="noopener noreferrer">Instructor/a: Matías Campos</a><br>
+                    <a href="santiago.acosta@bue.edu.ar
+                    " target="_blank" rel="noopener noreferrer">Tutor/a: Santiago Acosta</a><br>
+                    <a href="https://chat.whatsapp.com/FIQsN4IhBATAB8RXuNzhhv
+                    " target="_blank" rel="noopener noreferrer">Link del grupo WhatsApp</a><br>
+                </div><br><br>
+                <h3>Creador de los videos</h3>
+                <div class="footer-cont__a">
+                    <a href="https://codigoconjuan.com/" target="_blank" rel="noopener noreferrer noreferrer">Código Juan</a>
+                </div>
+            </section>
+            <section class="footer-cont__section-3">
+                <h3 class="section3-h3">Gracias por visitar mi sitio de tutoriales de HTML y CSS!!!</h3>
+            </section>
+            <p class="footer__parrafo-final">2024 - A Programar - Guillermo G. Castaño</p>
+        </div>
+        
+    </footer>
+        
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe id="videoFrame" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="./js/codigo.js"></script>
+    <script src="./js/checkbox-state.js"></script>
+        
+    </body>
+</html>
