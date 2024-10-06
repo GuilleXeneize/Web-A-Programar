@@ -511,6 +511,10 @@ section.footer-cont__section-3 .section3-h3 {
         justify-content: center;
         align-items: center;
     }
+
+    .section-1 {
+        height: 50vh;
+    }
 }
 
 /* Media query para pantallas más pequeñas, como 310px de ancho */
@@ -550,6 +554,10 @@ section.footer-cont__section-3 .section3-h3 {
 
     .section3-h3 {
         font-size: 1.3rem; 
+    }
+
+    .section-1 {
+        height: 100vh;
     }
 }
 
