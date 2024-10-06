@@ -227,7 +227,7 @@ a.links:hover {
 
 .hero-pag-video {
     position: relative;
-    background: linear-gradient(rgba(29, 217, 242, 0.284), rgba(29, 210, 242, 0.307)), url(../img/para-estudiar-2.jpg);
+    background: linear-gradient(rgba(29, 217, 242, 0.284), rgba(29, 210, 242, 0.307)), url(../img/student.jpg);
     background-size: cover;
     background-position: center; /* Añadido para mejor posicionamiento */
     z-index: -10;
@@ -240,7 +240,7 @@ a.links:hover {
 
 .hero-pag-preguntas {
     position: relative;
-    background: linear-gradient(rgba(105, 40, 119, 0.284), rgba(124, 48, 141, 0.307)), url(../img/preguntas.jpg);
+    background: linear-gradient(rgba(105, 40, 119, 0.284), rgba(124, 48, 141, 0.307)), url(../img/preguntas\(2\).jpg);
     background-size: cover;
     background-position: center; /* Añadido para mejor posicionamiento */
     z-index: -10;
@@ -491,9 +491,10 @@ section.footer-cont__section-3 .section3-h3 {
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
     .footer-cont {
-        grid-template-columns: 1fr; /* Cambia a una columna */
-        text-align: center; /* Centra el texto */
-        gap: 1rem; /* Reduce el espacio entre elementos */
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 30% 30% 10%;
+        text-align: center;
+        gap: 1rem; 
         margin-top: 8rem;
     }
 
@@ -505,8 +506,52 @@ section.footer-cont__section-3 .section3-h3 {
     .footer {
         padding: 2rem; /* Ajusta el padding en pantallas pequeñas */
     }
+    section.footer-cont__section-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
+/* Media query para pantallas más pequeñas, como 310px de ancho */
+@media (max-width: 480px) {
+    .footer {
+        padding: 1rem 0.5rem; 
+        margin-top: 5rem; 
+    }
+
+    .footer-cont {
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 30% 30% 10%;
+        text-align: center; 
+        gap: 0.5rem;
+        margin-top: 4rem; 
+        padding: 1rem; 
+    }
+
+    .footer-cont h3 {
+        font-size: 1.1rem; 
+    }
+
+    .footer-cont a {
+        font-size: 1rem; 
+    }
+
+    .footer__parrafo-final {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-size: 0.9rem; 
+    }
+
+    /* Sección 3 ajustes */
+    .footer-cont__section-3 {
+        flex-direction: column;
+    }
+
+    .section3-h3 {
+        font-size: 1.3rem; 
+    }
+}
 
 /* PREGUNTAS -- CONTENIDO INDEX */
 .title {
